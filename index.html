@@ -1,14 +1,16 @@
+
+<!-- 
+	https://pages.github.com/
+ -->
+
+
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<title>Adriel's Homepage</title>
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	
 	<style>
 	
 		/* this is where our css rules go */
@@ -19,119 +21,29 @@
 		}
 
 		body {
-			font-family: 'Playfair Display', serif;
-
 			background-color: white;
 
 		}
 
-		/* Header/logo Title */
-		.header {
-				background: #5eadbb;
-				color: #ddd;
-				/* -webkit-text-stroke-color: black; */
-				/* -webkit-text-stroke-width: 0.001px; */
-				background-image: url("https://i.imgur.com/L0GbkSf.jpg"); 
-				margin: auto;
-				float: auto;
-				padding: 80px;
-				text-align: center;
-		}
-
-		.profile-pic {
-			float: left;
-			border: solid black;
-			padding-bottom: 0px;
-			overflow: hidden;
-			border-radius: 50%;
-			
-
-		}
-
-		/* Increase the font size of the heading */
-		.header h1 {
-    	font-size: 48px;
-			margin-bottom: 0px; 
-		}
-
-
-		.header p {
-			font-size: 28px;
-		}
-
-		.info {
-			margin-right: 200px;
-		}
-
-
-		/* Style the top navigation bar */
-		.navbar {
-			/* The overflow property specifies what should happen 
-			if content overflows an element's box.
-			could be 'visible', 'scroll' etc. */
-   		overflow: hidden;
-    	background-color: #333;
-		}
-
-		/* Style the navigation bar links */
-		.navbar a {
-
-			/* The float property can have one of the following values:
-				left - The element floats to the left of its container
-				right- The element floats to the right of its container */
-				float: left;
-
-				/* https://www.w3schools.com/cssref/pr_class_display.asp */
-				display: block;
-
-				color: white;
-				text-align: center;
-				padding: 14px 20px;
-				text-decoration: none;
-		}
-
-		/* Right-aligned link */
-		.navbar a.right {
-			float: right;
-		}
-
-		/* Change color on hover */
-		.navbar a:hover {
-			background-color: #ddd;
-			color: black;
-		}
-
-	/* Main column */
-		.page {   
-			-ms-flex: 70%; /* IE10 */
-			flex: 70%;
-			background-color: white;
-			padding: 20px;
-		}
-
-
-
-		/* h1 {
+		h1 {
 			font-size: 28px;
 			text-shadow: 15px 15px red , -15px -15px blue;
 		
-		} */
+		}
 		
-		/* h2 {
+		h2 {
 			color: blue;
 			padding: 20px;
-			border: 5px  red; 
+			/* border: 5px  red; */
 			border: dotted 10px blue;	
-		} 
-		*/
+		}
 
 		p {
 			color: 00ff22;
 		}
 
-		.about-me-paragraph{
-			text-align: left;
-
+		#about-me-paragraph{
+			font-size: 28px;
 		}
 
 		.three-main-paragraphs {
@@ -141,7 +53,7 @@
 		#doesnt-matter{
 			margin: auto;
 			text-align: center;
-			background-color:#333;
+			background-color: darkslategray;
 			width: 85%;
 		}
 
@@ -149,59 +61,9 @@
 			margin: auto;
 			text-align: center;
 			background-color: black;
-			-ms-flex: 70%; /* IE10 */
-			flex: 70%;
-			padding: 20px;
-		}
-
-		.main-pic{
-			margin: auto;
-			overflow: hidden;
-			/* width: 90%; */
-    	padding: 20px;
+			width: 90%;
 
 		}
-
-		/* Footer */
-		.footer {
-			padding: 20px;
-			text-align: right;
-			background: #333;
-		}
-
-		.fa {
-			padding: 15px;
-			font-size: 20px;
-			width: 20px;
-			text-align: center;
-			text-decoration:black;
-			border-radius: 50%;
-		}
-
-		.fa:hover {
-			opacity: 0.7;
-		}
-
-		.fa-facebook {
-			background: black;
-			color: white;
-		}
-
-		.fa-twitter {
-			background: black;
-			color: white;
-		}
-
-		.fa-google {
-			background: black;
-			color: white;
-		}
-
-		.fa-linkedin {
-			background: black;
-			color: white;
-		}
-
 
 	</style>
 
@@ -209,68 +71,44 @@
 </head>
 
 <body> 
-
-	<div class="header">
-		<div class="profile-pic" >
-			<img src="./img/adriel.jpg" height= 205px>
-		</div>
-		<div class="info">
-			<h1> Adriel Arsenault </h1>
-			<p> Developer </p>
-		</div>
-	</div>
-
-	<div class="navbar">
-			<a href="#">About Me</a>
-			<a href="#">Projects</a>
-			<a href="#">Resume</a>
-			<a href="#" class="right">Contact Me</a>
-	</div>
-		
-
 	<div id="page">
-		<h2> ABOUT ME </h2>
-		<h5>How I Ended Up As A Developer</h5>
+	<h1> Adriel Arsenault </h1>
+	<h2> About Me </h2>
 
-		<div class="main-pic">
-			<!-- <img src="https://i.imgur.com/L0GbkSf.jpg" height=350px> -->
-		</div>
-		
-		<p class="about-me-paragraph">
-			This paragraph is where I would probably talk about how I ended up
-			learning to code. I'm not really sure I'm mostly just filling some
-			space here. Remember that whitespace in your editor doesn't actually
-			get translated to whitespace outside of your editor. 
-		</p>
 
-		<p class="about-me-paragraph">
-				This paragraph is where I would probably talk about how I ended up
-				learning to code. I'm not really sure I'm mostly just filling some
-				space here. Remember that whitespace in your editor doesn't actually
-				get translated to whitespace outside of your editor. 
-			</p>
-		
-		<h2> Skills </h2>
-		<h5>Things I know how to do well</h5>
+	<ol>
+			<li> First thing </li>
+			<li> Second thing </li>
+			<li> Fourth thing </li>	
+	</ol>
 
-		<p class="about-me-paragraph"> Short description paragraph of some things I can do pretty good.
-				Maybe here I would expain some of the context behind what I worked
-				on and why or something. Idk
-		</p>
+	<p id="about-me-paragraph">I'm a Web Developer currently living in Montreal Quebec. <br> Before becoming a programmer I studied physics and literature.
+		In my spare time I like to make music and teach people how to code</p>
 
+	<h2> Skills </h2>
+
+	<p> I'm a Web Developer currently living in Montreal Quebec. 
+		Before becoming a programmer I studied physics and literature.
+		In my spare <em> wowowo </em> I like to make music and teach people how to code! </p>
 	
+	<h2> Skills </h2>
+		
+	<div id=doesnt-matter>
+		<p class="three-main-paragraphs"> My skill include programming in javascript and python,
+			web and software development, and fixing bicycles </p>
+
+		<p class="three-main-paragraphs"> My skill include programming in javascript and python,
+			web and software development, and fixing bicycles </p>
+
+		<p class="three-main-paragraphs"> My skill include programming in javascript and python,
+			web and software development, and fixing bicycles </p>
 	</div>
 
-	<div class="footer">
-			<h2>Footer</h2>
-			<div class="social">
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-google"></a>
-				<a href="#" class="fa fa-linkedin"></a>
-			</div>
-	</div>
 
-
+	CSS <br>
+	Javascript <br>
+	Python <br>
+</page>
 </body>
+
 </html>
